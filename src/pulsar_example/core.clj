@@ -11,8 +11,9 @@
     (do
       (! pong [:ping @self])
       (receive
-        :pong (println "Ping received pong"))
-      (recur (dec n) pong))))
+        :pong (do
+                (println "Ping received pong")
+                (recur (dec n) pong))))))
 
 (defsfn pong []
   (receive
