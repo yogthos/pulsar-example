@@ -1,5 +1,8 @@
 (ns pulsar-example.core
-  (:use [co.paralleluniverse.pulsar core actors])
+  (:require
+   [co.paralleluniverse.pulsar
+    [core :refer :all]
+    [actors :refer :all]])
   (:refer-clojure :exclude [promise await])
   (:gen-class))
 
