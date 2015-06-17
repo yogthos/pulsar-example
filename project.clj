@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0-RC1"]
-                 [co.paralleluniverse/pulsar "0.7.0"]
+                 [co.paralleluniverse/pulsar "0.7.1-SNAPSHOT"]
                  [co.paralleluniverse/quasar-core "0.7.0"]]
 
   :manifest {"Premain-Class" "co.paralleluniverse.fibers.instrument.JavaAgent"
