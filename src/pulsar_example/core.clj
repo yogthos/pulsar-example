@@ -28,4 +28,6 @@
 (defn -main []
   (let [a1 (spawn pong)
         b1 (spawn ping 3 a1)]
+    (join a1)
+    (join b1)
     :ok))
