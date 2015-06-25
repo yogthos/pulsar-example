@@ -3,16 +3,16 @@
   :url "https://github.com/yogthos/pulsar-example"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.7.0-RC1"]
-                 [co.paralleluniverse/pulsar "0.7.1-SNAPSHOT"]
-                 [co.paralleluniverse/quasar-core "0.7.0"]]
+  :dependencies [[org.clojure/clojure "1.7.0-RC2"]
+                 [co.paralleluniverse/pulsar "0.7.2"]
+                 [co.paralleluniverse/quasar-core "0.7.2"]]
 
   :manifest {"Premain-Class" "co.paralleluniverse.fibers.instrument.JavaAgent"
              "Agent-Class" "co.paralleluniverse.fibers.instrument.JavaAgent"
              "Can-Retransform-Classes" "true"
              "Can-Redefine-Classes" "true"}
 
-  :java-agents [[co.paralleluniverse/quasar-core "0.7.0"]]
+  :java-agents [[co.paralleluniverse/quasar-core "0.7.2"]]
 
   :main pulsar-example.core
   :uberjar-name "pulsar-example.jar" 
